@@ -1,23 +1,20 @@
-# API de Tareas
+# Task API
 
-El proyecto es un api de tareas en Python 3.12.2, en la api nos podemos registar, loguearnos y desloguearnos, podemos obtener un usuario por id, podemos eliminar un usuario por id, al momento de eliminar un usuario se eliminan las tareas que haya creado ese usuario.
+The project is a task API built in Python 3.12.2. In this API, users can register, log in, and log out. Users can retrieve a user by ID and delete a user by ID. When deleting a user, all tasks created by that user are also deleted.
 
-Podemos crear tareas, obtener tarea por id, solo podemos acceder a las tareas que nosotros creamos, pasar las tareas de estado a completada, podemos filtrar tareas por tareas hechas y no hechas, tambien podemos eliminar una tarea por id y por ultimo podemos modificar las tareas.
+Users can create tasks, retrieve a task by ID (only tasks created by the logged-in user), mark tasks as completed, filter tasks by completed and uncompleted, delete a task by ID, and modify tasks.
 
-## Instalación
+## Installation
+1. Create a virtual environment using `python -m venv venv`.
+2. Activate the virtual environment:
+   - On Windows: `venv\Scripts\activate`
+   - On macOS and Linux: `source venv/bin/activate`
+3. Install project dependencies using `pip install -r requirements.txt`.
 
-1. Clona este repositorio en tu máquina local usando `git clone https://github.com/Di3go0-0/Python/tree/main/FastApi/task`.
-2. Navega hasta el directorio del proyecto.
-3. Crea un entorno virtual usando `python -m venv venv`.
-4. Activa el entorno virtual:
-   - En Windows: `venv\Scripts\activate`
-   - En macOS y Linux: `source venv/bin/activate`
-5. Instala las dependencias del proyecto usando `pip install -r requirements.txt`.
+## Execution
 
-## Ejecución
-
-Una vez instaladas las dependencias, puedes ejecutar el proyecto con el siguiente comando:
-recuerda que el puerto lo puedes cambiar a tu gusto.
+Once the dependencies are installed, you can run the project with the following command:
+remember you can change the port as you wish.
 
 ```bash
 uvicorn main:app --reload --port 8000
