@@ -9,9 +9,13 @@
 
 ## Installation
 
-- **Install the package:** ```bash 
+- **Install the package:** 
+```bash 
 npm i
-- **Run the front:** ```bash npm 
+```
+- **Run the front:** 
+```bash npm 
 run dev
+```
 
 
